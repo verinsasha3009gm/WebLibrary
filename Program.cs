@@ -6,7 +6,7 @@ using System.Text.Json.Serialization;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddDataAccessAssembly(builder.Configuration);
-builder.Services.AddDependencyInjection(builder.Configuration);
+builder.Services.AddDependencyInjection();
 builder.Services.AddSwagger();
 
 builder.Services.AddControllers().AddJsonOptions(options =>
