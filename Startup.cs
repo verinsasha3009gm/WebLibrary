@@ -5,8 +5,15 @@ using Microsoft.OpenApi.Models;
 
 namespace WebLibrary.API
 {
+    /// <summary>
+    /// Дополнительный класс конфигурации API -шки
+    /// </summary>
     public static class Startup
     {
+        /// <summary>
+        /// метод настройки swagger для разработчика
+        /// </summary>
+        /// <param name="services"></param>
         public static void AddSwagger(this IServiceCollection services)
         {
             services.AddApiVersioning().AddApiExplorer(options =>
